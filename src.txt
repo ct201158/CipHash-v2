@@ -1,0 +1,75 @@
+string signature = "=cip="; // Put your signature here. ex: ==
+
+            string spacechar = "-"; // Put your space character here. ex: abc-def
+
+            // Begin cipher phase (letters)
+
+            // Feel free to change the letters to whatever you want, only change the second one though.
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "a", "1dz"); //1
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "b", "2dY"); //2
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "c", "w4a"); //3
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "d", "E6s"); //4
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "e", "m1N"); //5
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "f", "c3b"); //6
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "g", "0MV"); //7
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "h", "qT2"); //8
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "i", "J1c"); //9
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "j", "v5j"); //10
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "k", "20a"); //11
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "l", "u5y"); //12
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "m", "uG7"); //13
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "n", "Lw8"); //14
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "o", "G4j"); //15
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "p", "kt0"); //16
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "q", "B3F"); //17
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "r", "2ZI"); //18
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "s", "rP3"); //19
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "t", "rl1"); //20
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "u", "Y3J"); //21
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "v", "e5X"); //22
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "w", "mD0"); //23
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "x", "nz3"); //24
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "y", "s3L"); //25
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "z", "0rz"); //26
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, " ", spacechar); //space
+
+            // Number cipher phase
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "1", "WQ"); //1
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "2", "YL"); //2
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "3", "Tg"); //3
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "4", "Fw"); //4
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "5", "IL"); //5
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "6", "RH"); //6
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "7", "Qd"); //7
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "8", "Oy"); //8
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "9", "SR"); //9
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "0", "jP"); //0
+
+            // Anti RT
+
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "Tg", ".");
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "Dj", ",");
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "rP", "!");
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "WQ", "-");
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "JGQ", "+");
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "Prz", "=");
+            richTextBox1.Text = Regex.Replace(richTextBox1.Text, "ERH", "*");
+
+            // Adding signature
+
+            richTextBox1.Text = (richTextBox1.Text + signature); // Don't change this, only change the one at the top
